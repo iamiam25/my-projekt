@@ -1,0 +1,129 @@
+ Victoria 4.47  Freeware (2013-02-20)  log file. 13.07.2016
+11:35:57 : Warning! Main INI-file 'vcr40.ini' not found, and writen default sets!
+11:35:57 : Starting Victoria 4.47  Freeware (2013-02-20) , 2xCPU, 3362,18 MHz, Windows unknown NT found.
+11:35:57 : Select SECONDARY port: base=170h, alternative=376h
+11:36:18 : Port 0170h - drive disconnected!
+11:37:49 : Primary port is blocked. Please, read manual
+11:37:49 : Select SECONDARY port: base=170, alternative=376h
+11:38:04 : API access enabled, device #1
+11:38:06 : Get passport... OK
+11:38:06 : 48bit access enabled
+11:38:06 : Model: ST31000528AS; Capacity: 1953525168 LBAs; SN: 5VP5KKW0; FW: CC49
+11:38:40 : Get S.M.A.R.T. command... OK
+11:38:40 : SMART status = BAD
+11:39:00 : Get passport... OK
+11:39:00 : Recallibration... OK
+11:39:00 : Starting Reading, LBA=0..1953525167, sequential access, timeout 10000ms
+11:52:23 : Get passport... OK
+11:52:23 : Model: ST31000528AS; Capacity: 1953525168 LBAs; SN: 5VP5KKW0; FW: CC49
+11:58:06 : Block 272152832 Error: UNCR
+11:58:13 : Warning! Block start at 273147136 = 828 ms
+11:58:18 : Warning! Block start at 274026496 = 204 ms
+11:58:18 : Warning! Block start at 274026752 = 171 ms
+11:59:03 : Warning! Block start at 280698624 = 141 ms
+11:59:04 : Warning! Block start at 280713216 = 156 ms
+11:59:05 : Warning! Block start at 280723456 = 125 ms
+11:59:07 : Warning! Block start at 280793344 = 235 ms
+11:59:08 : Warning! Block start at 280795136 = 172 ms
+11:59:08 : Warning! Block start at 280797184 = 125 ms
+11:59:08 : Warning! Block start at 280797440 = 188 ms
+11:59:09 : Warning! Block start at 280799232 = 250 ms
+11:59:09 : Warning! Block start at 280803584 = 172 ms
+11:59:10 : Warning! Block start at 280807680 = 265 ms
+11:59:10 : Warning! Block start at 280807936 = 141 ms
+11:59:13 : Warning! Block start at 280869632 = 156 ms
+11:59:13 : Warning! Block start at 280869888 = 125 ms
+11:59:13 : Warning! Block start at 280871936 = 125 ms
+11:59:17 : Warning! Block start at 281616384 = 359 ms
+11:59:17 : Warning! Block start at 281616640 = 219 ms
+11:59:18 : Warning! Block start at 281620480 = 157 ms
+11:59:19 : Warning! Block start at 281626880 = 250 ms
+11:59:19 : Warning! Block start at 281627136 = 219 ms
+11:59:19 : Warning! Block start at 281628928 = 172 ms
+11:59:19 : Warning! Block start at 281632768 = 125 ms
+11:59:20 : Warning! Block start at 281671936 = 156 ms
+11:59:21 : Warning! Block start at 281676288 = 157 ms
+11:59:22 : Warning! Block start at 281684224 = 203 ms
+11:59:23 : Warning! Block start at 281696768 = 157 ms
+11:59:24 : Warning! Block start at 281721600 = 235 ms
+11:59:25 : Warning! Block start at 281754368 = 156 ms
+11:59:26 : Warning! Block start at 281793280 = 265 ms
+11:59:27 : Warning! Block start at 281799936 = 172 ms
+11:59:27 : Warning! Block start at 281805824 = 157 ms
+11:59:27 : Warning! Block start at 281806080 = 125 ms
+11:59:28 : Warning! Block start at 281809920 = 281 ms
+11:59:29 : Warning! Block start at 281839104 = 125 ms
+11:59:29 : Warning! Block start at 281839360 = 141 ms
+11:59:29 : Warning! Block start at 281842944 = 125 ms
+11:59:30 : Warning! Block start at 281844992 = 250 ms
+11:59:30 : Warning! Block start at 281845248 = 125 ms
+11:59:34 : Warning! Block start at 282565376 = 125 ms
+11:59:34 : Warning! Block start at 282566912 = 125 ms
+11:59:36 : Warning! Block start at 282586112 = 125 ms
+11:59:38 : Warning! Block start at 282641664 = 125 ms
+11:59:38 : Warning! Block start at 282643456 = 157 ms
+11:59:38 : Warning! Block start at 282643712 = 125 ms
+11:59:38 : Warning! Block start at 282647808 = 125 ms
+11:59:38 : Warning! Block start at 282648064 = 172 ms
+11:59:39 : Warning! Block start at 282649856 = 125 ms
+11:59:40 : Warning! Block start at 282666496 = 125 ms
+11:59:42 : Warning! Block start at 282722048 = 125 ms
+11:59:44 : Warning! Block start at 282744320 = 125 ms
+11:59:46 : Warning! Block start at 282800128 = 125 ms
+11:59:52 : Warning! Block start at 283557376 = 125 ms
+11:59:53 : Warning! Block start at 283561216 = 125 ms
+11:59:56 : Warning! Block start at 283627264 = 125 ms
+11:59:57 : Warning! Block start at 283633664 = 125 ms
+11:59:57 : Warning! Block start at 283635456 = 125 ms
+11:59:57 : Warning! Block start at 283637248 = 125 ms
+11:59:58 : Warning! Block start at 283641600 = 157 ms
+11:59:58 : Warning! Block start at 283649536 = 125 ms
+11:59:59 : Warning! Block start at 283658240 = 125 ms
+12:00:00 : Warning! Block start at 283700992 = 125 ms
+12:00:00 : Warning! Block start at 283705600 = 125 ms
+12:00:01 : Warning! Block start at 283711744 = 125 ms
+12:00:02 : Warning! Block start at 283719936 = 125 ms
+12:00:02 : Warning! Block start at 283723776 = 125 ms
+12:00:03 : Warning! Block start at 283730176 = 140 ms
+12:00:03 : Warning! Block start at 283732224 = 125 ms
+12:00:03 : Warning! Block start at 283732480 = 156 ms
+12:00:04 : Warning! Block start at 283744768 = 141 ms
+12:00:08 : Warning! Block start at 284477184 = 125 ms
+12:00:08 : Warning! Block start at 284479232 = 140 ms
+12:00:08 : Warning! Block start at 284483072 = 125 ms
+12:00:10 : Warning! Block start at 284514304 = 125 ms
+12:00:13 : Warning! Block start at 284569856 = 125 ms
+12:00:14 : Warning! Block start at 284608512 = 125 ms
+12:00:15 : Warning! Block start at 284614912 = 125 ms
+12:00:17 : Warning! Block start at 284678912 = 141 ms
+12:00:17 : Warning! Block start at 284680960 = 125 ms
+12:00:25 : Warning! Block start at 285466880 = 140 ms
+12:09:53 : Warning! Block start at 417043200 = 2547 ms
+12:28:58 : Warning! Block start at 676181760 = 2515 ms
+13:09:46 : Warning! Block start at 1190163968 = 187 ms
+13:14:15 : Warning! Block start at 1242226176 = 2594 ms
+13:57:47 : Warning! Block start at 1701318144 = 250 ms
+13:57:47 : Warning! Block start at 1701336064 = 156 ms
+13:57:48 : Warning! Block start at 1701366016 = 172 ms
+13:57:48 : Warning! Block start at 1701368832 = 141 ms
+13:57:49 : Warning! Block start at 1701381632 = 219 ms
+13:57:49 : Warning! Block start at 1701385728 = 188 ms
+13:57:49 : Warning! Block start at 1701386752 = 172 ms
+13:57:49 : Warning! Block start at 1701391616 = 265 ms
+13:57:50 : Warning! Block start at 1701392896 = 140 ms
+13:57:51 : Warning! Block start at 1701413120 = 156 ms
+13:57:51 : Warning! Block start at 1701417984 = 156 ms
+13:57:51 : Warning! Block start at 1701419264 = 219 ms
+14:02:36 : Warning! Block start at 1744925184 = 141 ms
+14:02:36 : Warning! Block start at 1744925696 = 219 ms
+14:02:37 : Warning! Block start at 1744973824 = 157 ms
+14:02:37 : Warning! Block start at 1744974592 = 141 ms
+14:02:37 : Warning! Block start at 1744975104 = 141 ms
+14:02:37 : Warning! Block start at 1745005824 = 140 ms
+14:03:37 : Warning! Block start at 1754045184 = 234 ms
+14:03:37 : Warning! Block start at 1754060800 = 141 ms
+14:03:38 : Warning! Block start at 1754091264 = 187 ms
+14:27:25 : ***** Scan results: Warnings - 106, errors - 1 *****
+servicemarket - нет
+http://pulti.ua/ -нет
+http://mobit.dp.ua
