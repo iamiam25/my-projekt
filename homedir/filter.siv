@@ -1,0 +1,445 @@
+﻿#!1 __WebmailJunk__
+if allof (spamtest, not address :all :is "From" ["4marjana@gmail.com", "a.koinov@uhy-prostor.com", "accountant.sz@specznak.com.ua", "admin@specznak.com.ua", "alyans.sz@specznak.com.ua", "archiv.ga@specznak.com.ua", "atyugaev@yandex.ru", "AVoloshina@altema-fs.com", "avtopolis@specznak.com.ua", "batrachenko.anna@specznak.com.ua", "berezitskiy.andrey@gmail.com", "berezitskiy.andrey@specznak.com.ua", "birja.tr@specznak.com.ua", "buh.ga@specznak.com.ua", "buhgalter.sz@specznak.com.ua", "buhhelp.ga@specznak.com.ua", "call-operator@specznak.com.ua", "centr.dpf@specznak.com.ua", "commercial.sz@specznak.com.ua", "consult.da2@specznak.com.ua", "consult.da@specznak.com.ua", "consult.dpf@specznak.com.ua", "consult.kh@specznak.com.ua", "consult.tu@specznak.com.ua", "dir.da@specznak.com.ua", "dir.dpf@specznak.com.ua", "dir.sz@bigmir.net", "dpf_specznak@ukr.net", "elkanata@i.ua", "financial.sz@specznak.com.ua", "go3000.sz@specznak.com.ua", "go4000@specznak.com.ua", "gritc1611@gmail.com", "gritc@ukr.net", "gryb.maksim@specznak.com.ua", "hadmin@specznak.com.ua", "hcommercial@specznak.com.ua", "hr@specznak.com.ua", "irina.kravchenko.89@bk.ru", "it@infovideo.pro", "jurist.sz@specznak.com.ua", "kravchenko.irina@specznak.com.ua", "malaya@novarobota.ua", "maslova.iuliia@gmail.com", "mikheeva.ekaterina@specznak.com.ua", "money.credit.com.ua@gmail.com", "mreo12@specznak.com.ua", "n_roman@ukr.net", "noreply@rabota.ua", "officeadmin.ga@specznak.com.ua", "r.bondarenko@callway.com.ua", "retail.sz@specznak.com.ua", "retail.tr@specznak.com.ua", "samorai.veronika@specznak.com.ua", "secretar.sz@specznak.com.ua", "selezneva.ekaterina@specznak.com.ua", "sergeyE-36@bigmir.net", "shakabar@gmail.com", "simoron1371@gmail.com", "slupitskiy.sergey@specznak.com.ua", "stamper.sz@specznak.com.ua", "stamper.tr@specznak.com.ua", "stamphelper.sz@specznak.com.ua", "tatyanka-vitkovskaya@yandex.ru", "ukrkonsalting@mail.ru", "ukrresource.10@gmail.com", "ukrresource.17@gmail.com", "ura@4storony.kiev.ua", "vea@ukr.net", "wholesale.sz@specznak.com.ua", "ya-mm-007@ya.ru", "ya.mm-007@yandex.ru", "dmtr@fort.kiev.ua", "kirill.patrick@gmail.com", "mary_nik2@ukr.net", "prokopenko.aleksandr@specznak.com.ua", "merkulova.elizaveta@specznak.com.ua", "davidenko.katerina@specznak.com.ua", "puzhak.aleksandr@specznak.com.ua", "rashkivskiy.denis@specznak.com.ua", "dima@streamtele.com", "zhukova.tatiana@specznak.com.ua"]) {
+  fileinto "Junk E-mail";
+  stop;
+}
+
+#!1 Pogrebnaya.Anna time
+if allof (address :all :contains "From" ["Pogrebnaya.Anna", "pogrebnaya.anna"], header :contains "Subject" ["пришел", "ушел", "пришёл", "ушёл", "Пришел", "Ушел", "нерабочее время"]) {
+  fileinto "~hr@specznak.com.ua/INBOX/&BEMERwRRBEI- &BEAEMAQxBD4ERwQ1BDMEPg- &BDIEQAQ1BDwENQQ9BDg-/&BD8EPgQ0BD4EOw-/Pogrebnaya.Anna";
+}
+
+#!1 Pogrebnaya.Anna corp
+if allof (address :all :contains "From" ["Pogrebnaya.Anna", "pogrebnaya.anna"], not header :contains "Subject" ["пришел", "ушел", "пришёл", "ушёл", "Пришел", "Ушел", "нерабочее время"]) {
+  fileinto "~hr@specznak.com.ua/INBOX/&BBoEPgRABD8EPgRABDAERgQ4BE8-";
+}
+
+#!1 учёт dir.da
+if allof (header :contains "Subject" ["пришел", "ушел", "пришёл", "ушёл", "Пришел", "Ушел", "нерабочее время"], address :all :contains "From" "dir.da") {
+  fileinto "~hr@specznak.com.ua/INBOX/&BEMERwRRBEI- &BEAEMAQxBD4ERwQ1BDMEPg- &BDIEQAQ1BDwENQQ9BDg-/&BDQEMARABD0EOARGBDA-/dir.da";
+}
+
+#!1 Brigunenko.Oksana time
+if allof (header :contains "Subject" ["пришел", "ушел", "пришёл", "ушёл", "Пришел", "Ушел", "нерабочее время"], address :all :contains "From" ["consult.da@specznak.com.ua", "Brigunenko.Oksana", "brigunenko.oksana"]) {
+  fileinto "~hr@specznak.com.ua/INBOX/&BEMERwRRBEI- &BEAEMAQxBD4ERwQ1BDMEPg- &BDIEQAQ1BDwENQQ9BDg-/&BDQEMARABD0EOARGBDA-/Brigunenko.Oksana";
+}
+
+#!1 office dir.da
+if allof (not header :contains "Subject" ["пришел", "ушел", "пришёл", "ушёл", "Пришел", "Ушел", "нерабочее время"], address :all :contains "From" "dir.da") {
+  fileinto "~hr@specznak.com.ua/INBOX/&BBoEPgRABD8EPgRABDAERgQ4BE8-";
+}
+
+#!1 Brigunenko.Oksana corp
+if allof (not header :contains "Subject" ["пришел", "ушел", "пришёл", "ушёл", "Пришел", "Ушел", "нерабочее время"], address :all :contains "From" ["brigunenko.oksana", "Brigunenko.Oksana"]) {
+  fileinto "~hr@specznak.com.ua/INBOX/&BBoEPgRABD8EPgRABDAERgQ4BE8-";
+}
+
+#!1 учёт alyans.ga
+if allof (address :all :contains "From" "alyans.ga", header :contains "Subject" ["пришел", "ушел", "пришёл", "ушёл", "Пришел", "Ушел", "нерабочее время"]) {
+  fileinto "~hr@specznak.com.ua/INBOX/&BEMERwRRBEI- &BEAEMAQxBD4ERwQ1BDMEPg- &BDIEQAQ1BDwENQQ9BDg-/&BDEEMAQ2BDAEPQQw-/alyans.ga";
+}
+
+#!1 учёт consult.ga
+if allof (address :all :contains "From" "consult.ga", header :contains "Subject" ["пришел", "ушел", "пришёл", "ушёл", "Пришел", "Ушел", "нерабочее время"]) {
+  fileinto "~hr@specznak.com.ua/INBOX/&BEMERwRRBEI- &BEAEMAQxBD4ERwQ1BDMEPg- &BDIEQAQ1BDwENQQ9BDg-/&BDEEMAQ2BDAEPQQw-/consult.ga";
+}
+
+#!1 office alyans.ga
+if allof (address :all :contains "From" "alyans.ga", not header :contains "Subject" ["пришел", "ушел", "пришёл", "ушёл", "Пришел", "Ушел", "нерабочее время"]) {
+  fileinto "~hr@specznak.com.ua/INBOX/&BBoEPgRABD8EPgRABDAERgQ4BE8-";
+}
+
+#!1 учёт avtorinok
+if allof (address :all :contains "From" "ukrresource.10@gmail.com", header :contains "Subject" ["пришел", "ушел", "пришёл", "ушёл", "Пришел", "Ушел", "нерабочее время", "ушел", "пришёл", "ПРИШЕЛ", "пришел", "ушел", "пришёл", "ушёл", "Пришел", "Ушел", "ПРишел"]) {
+  fileinto "~hr@specznak.com.ua/INBOX/&BEMERwRRBEI- &BEAEMAQxBD4ERwQ1BDMEPg- &BDIEQAQ1BDwENQQ9BDg-/&BDAEMgRCBD4EQARLBD0EPgQ6-";
+}
+
+#!1 офисы avtorinok
+if allof (address :all :contains "From" "ukrresource.10@gmail.com", not header :contains "Subject" ["пришел", "ушел", "пришёл", "ушёл", "Пришел", "Ушел", "нерабочее время", "ушел", "пришёл", "ПРИШЕЛ", "Пришел", "ПРишел", "Ушел"]) {
+  fileinto "~hr@specznak.com.ua/INBOX/&BBoEPgRABD8EPgRABDAERgQ4BE8-";
+}
+
+#!1 учёт adminsz
+if allof (address :all :is "From" "admin@specznak.com.ua", header :contains "Subject" ["пришел", "ушел", "пришёл", "ушёл", "Пришел", "Ушел", "нерабочее время"]) {
+  fileinto "~hr@specznak.com.ua/INBOX/&BEMERwRRBEI- &BEAEMAQxBD4ERwQ1BDMEPg- &BDIEQAQ1BDwENQQ9BDg-/&BDoEQAQwBEEEPQQ+BDcEMgRRBDcENAQ9BEsEOQ-/admin";
+}
+
+#!1 учёт accountant.sz
+if allof (address :all :contains "From" "accountant.sz", header :contains "Subject" ["пришел", "ушел", "пришёл", "ушёл", "Пришел", "Ушел", "нерабочее время"]) {
+  fileinto "~hr@specznak.com.ua/INBOX/&BEMERwRRBEI- &BEAEMAQxBD4ERwQ1BDMEPg- &BDIEQAQ1BDwENQQ9BDg-/&BDoEQAQwBEEEPQQ+BDcEMgRRBDcENAQ9BEsEOQ-/accountant.sz";
+}
+
+#!1 учёт buhgalter.sz
+if allof (address :all :contains "From" "buhgalter.sz", header :contains "Subject" ["пришел", "ушел", "пришёл", "ушёл", "Пришел", "Ушел", "нерабочее время"]) {
+  fileinto "~hr@specznak.com.ua/INBOX/&BEMERwRRBEI- &BEAEMAQxBD4ERwQ1BDMEPg- &BDIEQAQ1BDwENQQ9BDg-/&BDoEQAQwBEEEPQQ+BDcEMgRRBDcENAQ9BEsEOQ-/buhgalter.sz";
+}
+
+#!1 учёт financial.sz
+if allof (address :all :contains "From" "financial.sz", header :contains "Subject" ["пришел", "ушел", "пришёл", "ушёл", "Пришел", "Ушел", "нерабочее время"]) {
+  fileinto "~hr@specznak.com.ua/INBOX/&BEMERwRRBEI- &BEAEMAQxBD4ERwQ1BDMEPg- &BDIEQAQ1BDwENQQ9BDg-/&BDoEQAQwBEEEPQQ+BDcEMgRRBDcENAQ9BEsEOQ-/financial.sz";
+}
+
+#!1 учёт alyans.sz
+if allof (address :all :contains "From" "alyans.sz", header :contains "Subject" ["пришел", "ушел", "пришёл", "ушёл", "Пришел", "Ушел", "нерабочее время"]) {
+  fileinto "~hr@specznak.com.ua/INBOX/&BEMERwRRBEI- &BEAEMAQxBD4ERwQ1BDMEPg- &BDIEQAQ1BDwENQQ9BDg-/&BDoEQAQwBEEEPQQ+BDcEMgRRBDcENAQ9BEsEOQ-/alyans.sz";
+}
+
+#!1 adminsz corp
+if allof (address :all :is "From" "admin@specznak.com.ua", not header :contains "Subject" ["пришел", "ушел", "пришёл", "ушёл", "Пришел", "Ушел", "нерабочее время"]) {
+  fileinto "~hr@specznak.com.ua/INBOX/&BBoEPgRABD8EPgRABDAERgQ4BE8-";
+}
+
+#!1 office accountant.sz
+if allof (address :all :contains "From" "accountant.sz", not header :contains "Subject" ["пришел", "ушел", "пришёл", "ушёл", "Пришел", "Ушел", "нерабочее время"]) {
+  fileinto "~hr@specznak.com.ua/INBOX/&BBoEPgRABD8EPgRABDAERgQ4BE8-";
+}
+
+#!1 office buhgalter.sz
+if allof (address :all :contains "From" "buhgalter.sz", not header :contains "Subject" ["пришел", "ушел", "пришёл", "ушёл", "Пришел", "Ушел", "нерабочее время"]) {
+  fileinto "~hr@specznak.com.ua/INBOX/&BBoEPgRABD8EPgRABDAERgQ4BE8-";
+}
+
+#!1 office financial.sz
+if allof (address :all :contains "From" "financial.sz", not header :contains "Subject" ["пришел", "ушел", "пришёл", "ушёл", "Пришел", "Ушел", "нерабочее время"]) {
+  fileinto "~hr@specznak.com.ua/INBOX/&BBoEPgRABD8EPgRABDAERgQ4BE8-";
+}
+
+#!1 office alyans.sz
+if allof (address :all :contains "From" "alyans.sz", not header :contains "Subject" ["пришел", "ушел", "пришёл", "ушёл", "Пришел", "Ушел", "нерабочее время"]) {
+  fileinto "~hr@specznak.com.ua/INBOX/&BBoEPgRABD8EPgRABDAERgQ4BE8-";
+}
+
+#!1 учёт курьер1
+if allof (address :all :contains "From" ["wholesale.sz", "Selezneva.Ekaterina", "demydova.nataliia", "Demydova.Nataliia"], header :is "Subject" ["пришелГорохов", "ушелГорохов", "нерабочее время"]) {
+  fileinto "~hr@specznak.com.ua/INBOX/&BEMERwRRBEI- &BEAEMAQxBD4ERwQ1BDMEPg- &BDIEQAQ1BDwENQQ9BDg-/&BDoEQAQwBEEEPQQ+BDcEMgRRBDcENAQ9BEsEOQ-/&BDoEQwRABEwENQRA-1";
+}
+
+#!1 учёт курьер2
+if allof (address :all :contains "From" ["wholesale.sz", "Selezneva.Ekaterina", "Demydova.Nataliia", "demydova.nataliia"], header :is "Subject" ["пришелМельник", "ушелМельник", "нерабочее время"]) {
+  fileinto "~hr@specznak.com.ua/INBOX/&BEMERwRRBEI- &BEAEMAQxBD4ERwQ1BDMEPg- &BDIEQAQ1BDwENQQ9BDg-/&BDoEQAQwBEEEPQQ+BDcEMgRRBDcENAQ9BEsEOQ-/&BDoEQwRABEwENQRA-2";
+}
+
+#!1 учёт курьер3
+if allof (address :all :contains "From" ["wholesale.sz", "Selezneva.Ekaterina", "demydova.dataliia", "Demydova.Nataliia"], header :is "Subject" ["пришелРоманец", "ушелРоманец", "нерабочее время"]) {
+  fileinto "~hr@specznak.com.ua/INBOX/&BEMERwRRBEI- &BEAEMAQxBD4ERwQ1BDMEPg- &BDIEQAQ1BDwENQQ9BDg-/&BDoEQAQwBEEEPQQ+BDcEMgRRBDcENAQ9BEsEOQ-/&BDoEQwRABEwENQRA-3";
+}
+
+#!1 офисы курьер1
+if allof (address :all :contains "From" ["wholesale.sz", "selezneva.ekaterina", "Demydova.Nataliia", "demydova.nataliia"], not header :is "Subject" ["пришел", "ушел", "пришёл", "ушёл", "Пришел", "Ушел", "пришелГорохов", "ушелГорохов", "пришелМельник", "ушелМельник", "нерабочее время", "пришелРоманец", "ушелРоманец"]) {
+  fileinto "~hr@specznak.com.ua/INBOX/&BBoEPgRABD8EPgRABDAERgQ4BE8-";
+}
+
+#!1 офисы курьер2
+if allof (address :all :contains "From" ["wholesale.sz", "Selezneva.Ekaterina", "demydova.nataliia", "Demydova.Nataliia"], not header :is "Subject" ["пришел", "ушел", "пришёл", "ушёл", "Пришел", "Ушел", "пришелГорохов", "ушелГорохов", "пришелМельник", "ушелМельник", "нерабочее время", "ушелРоманец", "пришелРоманец"]) {
+  fileinto "~hr@specznak.com.ua/INBOX/&BBoEPgRABD8EPgRABDAERgQ4BE8-";
+}
+
+#!1 офисы курьер3
+if allof (address :all :contains "From" ["wholesale.sz", "Selezneva.Ekaterina", "Demydova.Nataliia", "demydova.nataliia"], not header :is "Subject" ["пришел", "ушел", "пришёл", "ушёл", "Пришел", "Ушел", "пришелРоманец", "ушелМельник", "пришелМельник", "ушелГорохов", "пришелГорохов", "нерабочее время", "ушелРоманец"]) {
+  fileinto "~hr@specznak.com.ua/INBOX/&BBoEPgRABD8EPgRABDAERgQ4BE8-";
+}
+
+#!1 офис alyanshelp
+if allof (address :all :contains "From" "alyanshelp@specznak.com.ua", not header :contains "Subject" ["пришел", "ушел", "пришёл", "ушёл", "Пришел", "Ушел", "нерабочее время"]) {
+  fileinto "~hr@specznak.com.ua/INBOX/&BBoEPgRABD8EPgRABDAERgQ4BE8-";
+}
+
+#!1 учёт alyanshelp
+if allof (address :all :contains "From" "alyanshelp@specznak.com.ua", header :contains "Subject" ["пришел", "ушел", "пришёл", "ушёл", "Пришел", "Ушел", "нерабочее время"]) {
+  fileinto "~hr@specznak.com.ua/INBOX/&BEMERwRRBEI- &BEAEMAQxBD4ERwQ1BDMEPg- &BDIEQAQ1BDwENQQ9BDg-/&BDoEQAQwBEEEPQQ+BDcEMgRRBDcENAQ9BEsEOQ-/alyanshelp";
+}
+
+#!1 дпф курьер
+if allof (address :all :contains "From" "consult.dpf@specznak.com.ua", header :is "Subject" ["пришелКурьер", "ушелКурьер"]) {
+  fileinto "~hr@specznak.com.ua/INBOX/&BEMERwRRBEI- &BEAEMAQxBD4ERwQ1BDMEPg- &BDIEQAQ1BDwENQQ9BDg-/&BDQEPQQ1BD8EQAQ+BD8ENQRCBEAEPgQyBEEEOg-/&BDoEQwRABEwENQRA-";
+}
+
+#!1 директорГрицуник
+if address :all :contains "From" ["gritc1611@gmail.com", "gritc@ukr.net"] {
+  fileinto "~hr@specznak.com.ua/INBOX/&BBoEPgRABD8EPgRABDAERgQ4BE8-";
+}
+
+#!1 днепр корпорация
+if allof (address :all :contains "From" "info_dpf@specznak.com.ua", not header :contains "Subject" ["пришелКурьер", "ушелКурьер", "пришел", "ушел", "пришёл", "ушёл", "Пришел", "Ушел", "пришла", "ушла", "ушел", "пришёл", "Пришел"]) {
+  fileinto "~hr@specznak.com.ua/INBOX/&BBoEPgRABD8EPgRABDAERgQ4BE8-";
+}
+
+#!1 zhukova.t corp
+if allof (address :all :contains "From" "zhukova.tatiana@specznak.com.ua", not header :is "Subject" ["пришел", "ушел", "пришёл", "ушёл", "Пришел", "Ушел", "пришел", "ушел"]) {
+  fileinto "~hr@specznak.com.ua/INBOX/&BBoEPgRABD8EPgRABDAERgQ4BE8-";
+}
+
+#!1 zhukova.t time
+if allof (address :all :contains "From" "zhukova.tatiana@specznak.com.ua", header :is "Subject" ["пришел", "ушел", "пришёл", "ушёл", "Пришел", "Ушел", "ушел", "пришёл", "Пришел"]) {
+  fileinto "~hr@specznak.com.ua/INBOX/&BEMERwRRBEI- &BEAEMAQxBD4ERwQ1BDMEPg- &BDIEQAQ1BDwENQQ9BDg-/&BDoEQAQwBEEEPQQ+BDcEMgRRBDcENAQ9BEsEOQ-/zhukova.t";
+}
+
+#!1 Kravets.Tatianа time
+if allof (address :all :contains "From" ["Kravets.Tatianа", "kravets.tatiana"], header :is "Subject" ["пришел", "ушел"]) {
+  fileinto "~hr@specznak.com.ua/INBOX/&BEMERwRRBEI- &BEAEMAQxBD4ERwQ1BDMEPg- &BDIEQAQ1BDwENQQ9BDg-/&BDQEMARABD0EOARGBDA-/Kravets.Tatian&BDA-";
+}
+
+#!1 Kravets.Tatianа corp
+if allof (address :all :contains "From" ["Kravets.Tatianа", "kravets.tatiana"], not header :is "Subject" ["пришел", "ушел"]) {
+  fileinto "~hr@specznak.com.ua/INBOX/&BBoEPgRABD8EPgRABDAERgQ4BE8-";
+}
+
+#!1 Samorai.Veronika time
+if allof (address :all :contains "From" "Samorai.Veronika", header :is "Subject" ["пришел", "ушел"]) {
+  fileinto "~hr@specznak.com.ua/INBOX/&BEMERwRRBEI- &BEAEMAQxBD4ERwQ1BDMEPg- &BDIEQAQ1BDwENQQ9BDg-/&BDoEQAQwBEEEPQQ+BDcEMgRRBDcENAQ9BEsEOQ-/Samorai.Veronika";
+}
+
+#!1 Samorai.Veronika corp
+if allof (address :all :contains "From" "Samorai.Veronika", not header :is "Subject" ["пришел", "ушел"]) {
+  fileinto "~hr@specznak.com.ua/INBOX/&BBoEPgRABD8EPgRABDAERgQ4BE8-";
+}
+
+#!1 Gryb.Maksim time
+if allof (address :all :contains "From" "Gryb.Maksim", header :is "Subject" ["пришел", "ушел"]) {
+  fileinto "~hr@specznak.com.ua/INBOX/&BEMERwRRBEI- &BEAEMAQxBD4ERwQ1BDMEPg- &BDIEQAQ1BDwENQQ9BDg-/&BDoEQAQwBEEEPQQ+BDcEMgRRBDcENAQ9BEsEOQ-/Gryb.Maksim";
+}
+
+#!1 Gryb.Maksim corp
+if allof (address :all :contains "From" "Gryb.Maksim", not header :is "Subject" ["пришел", "ушел"]) {
+  fileinto "~hr@specznak.com.ua/INBOX/&BBoEPgRABD8EPgRABDAERgQ4BE8-";
+}
+
+#!1 Bychok.Tatyana time
+if allof (address :all :contains "From" "Bychok.Tatyana", header :is "Subject" ["пришел", "ушел"]) {
+  fileinto "~hr@specznak.com.ua/INBOX/&BEMERwRRBEI- &BEAEMAQxBD4ERwQ1BDMEPg- &BDIEQAQ1BDwENQQ9BDg-/&BD8EPgQ0BD4EOw-/Bychok.Tatyana";
+}
+
+#!1 Bychok.Tatyana corp
+if allof (address :all :contains "From" "Bychok.Tatyana", not header :is "Subject" ["пришел", "ушел"]) {
+  fileinto "~hr@specznak.com.ua/INBOX/&BBoEPgRABD8EPgRABDAERgQ4BE8-";
+}
+
+#!1 Glushchenko.Anastasiia time
+if allof (address :all :contains "From" "Glushchenko.Anastasiia", header :is "Subject" ["пришел", "ушел"]) {
+  fileinto "~hr@specznak.com.ua/INBOX/&BEMERwRRBEI- &BEAEMAQxBD4ERwQ1BDMEPg- &BDIEQAQ1BDwENQQ9BDg-/&BD8EPgQ0BD4EOw-/Glushchenko.Anastasiia";
+}
+
+#!1 Glushchenko.Anastasiia corp
+if allof (address :all :contains "From" "Glushchenko.Anastasiia", not header :is "Subject" ["пришел", "ушел"]) {
+  fileinto "~hr@specznak.com.ua/INBOX/&BBoEPgRABD8EPgRABDAERgQ4BE8-";
+}
+
+#!1 Kravchenko.Irina time
+if allof (address :all :contains "From" "Kravchenko.Irina", header :is "Subject" ["пришел", "ушел"]) {
+  fileinto "~hr@specznak.com.ua/INBOX/&BEMERwRRBEI- &BEAEMAQxBD4ERwQ1BDMEPg- &BDIEQAQ1BDwENQQ9BDg-/&BD8EPgQ0BD4EOw-/Kravchenko.Irina";
+}
+
+#!1 Kravchenko.Irina corp
+if allof (address :all :contains "From" "Kravchenko.Irina", not header :is "Subject" ["пришел", "ушел"]) {
+  fileinto "~hr@specznak.com.ua/INBOX/&BBoEPgRABD8EPgRABDAERgQ4BE8-";
+}
+
+#!1 Skorobogatko.Vitalii time
+if allof (address :all :contains "From" "Skorobogatko.Vitalii", header :is "Subject" ["пришел", "ушел"]) {
+  fileinto "~hr@specznak.com.ua/INBOX/&BEMERwRRBEI- &BEAEMAQxBD4ERwQ1BDMEPg- &BDIEQAQ1BDwENQQ9BDg-/&BD8EPgQ0BD4EOw-/Skorobogatko.Vitalii";
+}
+
+#!1 Skorobogatko.Vitalii corp
+if allof (address :all :contains "From" "Skorobogatko.Vitalii", not header :is "Subject" ["пришел", "ушел"]) {
+  fileinto "~hr@specznak.com.ua/INBOX/&BBoEPgRABD8EPgRABDAERgQ4BE8-";
+}
+
+#!1 Trigub.Aleksandr time
+if allof (address :all :contains "From" "Trigub.Aleksandr", header :is "Subject" ["пришел", "ушел"]) {
+  fileinto "~hr@specznak.com.ua/INBOX/&BEMERwRRBEI- &BEAEMAQxBD4ERwQ1BDMEPg- &BDIEQAQ1BDwENQQ9BDg-/&BD8EPgQ0BD4EOw-/Trigub.Aleksandr";
+}
+
+#!1 Trigub.Aleksandr corp
+if allof (address :all :contains "From" "Trigub.Aleksandr", not header :is "Subject" ["пришел", "ушел"]) {
+  fileinto "~hr@specznak.com.ua/INBOX/&BBoEPgRABD8EPgRABDAERgQ4BE8-";
+}
+
+#!1 Nosenko.Vasiliy time
+if allof (address :all :contains "From" "Nosenko.Vasiliy", header :is "Subject" ["пришел", "ушел"]) {
+  fileinto "~hr@specznak.com.ua/INBOX/&BEMERwRRBEI- &BEAEMAQxBD4ERwQ1BDMEPg- &BDIEQAQ1BDwENQQ9BDg-/&BDoEQAQwBEEEPQQ+BDcEMgRRBDcENAQ9BEsEOQ-/Nosenko.Vasiliy";
+}
+
+#!1 Nosenko.Vasiliy corp
+if allof (address :all :contains "From" "Nosenko.Vasiliy", not header :is "Subject" ["пришел", "ушел"]) {
+  fileinto "~hr@specznak.com.ua/INBOX/&BBoEPgRABD8EPgRABDAERgQ4BE8-";
+}
+
+#!1 Selezneva.Ekaterina time
+if allof (address :all :contains "From" "Selezneva.Ekaterina", header :is "Subject" ["пришел", "ушел"]) {
+  fileinto "~hr@specznak.com.ua/INBOX/&BEMERwRRBEI- &BEAEMAQxBD4ERwQ1BDMEPg- &BDIEQAQ1BDwENQQ9BDg-/&BDoEQAQwBEEEPQQ+BDcEMgRRBDcENAQ9BEsEOQ-/Selezneva.Ekaterina";
+}
+
+#!1 Selezneva.Ekaterina corp
+if allof (address :all :contains "From" "Selezneva.Ekaterina", not header :is "Subject" ["пришел", "ушел"]) {
+  fileinto "~hr@specznak.com.ua/INBOX/&BBoEPgRABD8EPgRABDAERgQ4BE8-";
+}
+
+#!1 Prokopenko.Aleksandr time
+if allof (address :all :contains "From" "Prokopenko.Aleksandr", header :is "Subject" ["пришел", "ушел"]) {
+  fileinto "~hr@specznak.com.ua/INBOX/&BEMERwRRBEI- &BEAEMAQxBD4ERwQ1BDMEPg- &BDIEQAQ1BDwENQQ9BDg-/&BDoEQAQwBEEEPQQ+BDcEMgRRBDcENAQ9BEsEOQ-/Prokopenko.Aleksandr";
+}
+
+#!1 Prokopenko.Aleksandr corp
+if allof (address :all :contains "From" "Prokopenko.Aleksandr", not header :is "Subject" ["пришел", "ушел"]) {
+  fileinto "~hr@specznak.com.ua/INBOX/&BBoEPgRABD8EPgRABDAERgQ4BE8-";
+}
+
+#!1 Puzhak.Aleksandr time
+if allof (address :all :contains "From" "Puzhak.Aleksandr", header :is "Subject" ["пришел", "ушел"]) {
+  fileinto "~hr@specznak.com.ua/INBOX/&BEMERwRRBEI- &BEAEMAQxBD4ERwQ1BDMEPg- &BDIEQAQ1BDwENQQ9BDg-/&BDoEQAQwBEEEPQQ+BDcEMgRRBDcENAQ9BEsEOQ-/Puzhak.Aleksandr";
+}
+
+#!1 Puzhak.Aleksandr corp
+if allof (address :all :contains "From" "Puzhak.Aleksandr", not header :is "Subject" ["пришел", "ушел"]) {
+  fileinto "~hr@specznak.com.ua/INBOX/&BBoEPgRABD8EPgRABDAERgQ4BE8-";
+}
+
+#!1 Gavrilenko.Igor time
+if allof (address :all :contains "From" "Gavrilenko.Igor", header :is "Subject" ["пришел", "ушел"]) {
+  fileinto "~hr@specznak.com.ua/INBOX/&BEMERwRRBEI- &BEAEMAQxBD4ERwQ1BDMEPg- &BDIEQAQ1BDwENQQ9BDg-/&BDoEQAQwBEEEPQQ+BDcEMgRRBDcENAQ9BEsEOQ-/Gavrilenko.Igor";
+}
+
+#!1 Gavrilenko.Igor corp
+if allof (address :all :contains "From" "Gavrilenko.Igor", not header :is "Subject" ["пришел", "ушел"]) {
+  fileinto "~hr@specznak.com.ua/INBOX/&BBoEPgRABD8EPgRABDAERgQ4BE8-";
+}
+
+#!1 Danilkovich.Natalia time
+if allof (address :all :contains "From" "Danilkovich.Natalia", header :is "Subject" ["пришел", "ушел"]) {
+  fileinto "~hr@specznak.com.ua/INBOX/&BEMERwRRBEI- &BEAEMAQxBD4ERwQ1BDMEPg- &BDIEQAQ1BDwENQQ9BDg-/&BDoEQAQwBEEEPQQ+BDcEMgRRBDcENAQ9BEsEOQ-/Danilkovich.Natalia";
+}
+
+#!1 Danilkovich.Natalia corp
+if allof (address :all :contains "From" "Danilkovich.Natalia", not header :is "Subject" ["пришел", "ушел"]) {
+  fileinto "~hr@specznak.com.ua/INBOX/&BBoEPgRABD8EPgRABDAERgQ4BE8-";
+}
+
+#!1 Berezitskiy.Andrey time
+if allof (address :all :contains "From" "Berezitskiy.Andrey", header :is "Subject" ["пришел", "ушел"]) {
+  fileinto "~hr@specznak.com.ua/INBOX/&BEMERwRRBEI- &BEAEMAQxBD4ERwQ1BDMEPg- &BDIEQAQ1BDwENQQ9BDg-/&BDoEQAQwBEEEPQQ+BDcEMgRRBDcENAQ9BEsEOQ-/Berezitskiy.Andrey";
+}
+
+#!1 Berezitskiy.Andrey corp
+if allof (address :all :contains "From" "Berezitskiy.Andrey", not header :is "Subject" ["пришел", "ушел"]) {
+  fileinto "~hr@specznak.com.ua/INBOX/&BBoEPgRABD8EPgRABDAERgQ4BE8-";
+}
+
+#!1 Davidenko.Katerina time
+if allof (address :all :contains "From" "Davidenko.Katerina", header :is "Subject" ["пришел", "ушел"]) {
+  fileinto "~hr@specznak.com.ua/INBOX/&BEMERwRRBEI- &BEAEMAQxBD4ERwQ1BDMEPg- &BDIEQAQ1BDwENQQ9BDg-/&BDoEQAQwBEEEPQQ+BDcEMgRRBDcENAQ9BEsEOQ-/Davidenko.Katerina";
+}
+
+#!1 Davidenko.Katerina corp
+if allof (address :all :contains "From" "Davidenko.Katerina", not header :is "Subject" ["пришел", "ушел"]) {
+  fileinto "~hr@specznak.com.ua/INBOX/&BBoEPgRABD8EPgRABDAERgQ4BE8-";
+}
+
+#!1 Slupitskiy.Sergey time
+if allof (address :all :contains "From" "Slupitskiy.Sergey", header :is "Subject" ["пришел", "ушел"]) {
+  fileinto "~hr@specznak.com.ua/INBOX/&BEMERwRRBEI- &BEAEMAQxBD4ERwQ1BDMEPg- &BDIEQAQ1BDwENQQ9BDg-/&BDoEQAQwBEEEPQQ+BDcEMgRRBDcENAQ9BEsEOQ-/Slupitskiy.Sergey";
+}
+
+#!1 Slupitskiy.Sergey corp
+if allof (address :all :contains "From" "Slupitskiy.Sergey", not header :is "Subject" ["пришел", "ушел"]) {
+  fileinto "~hr@specznak.com.ua/INBOX/&BBoEPgRABD8EPgRABDAERgQ4BE8-";
+}
+
+#!1 Drobotun.Sergei time
+if allof (address :all :contains "From" "Drobotun.Sergei", header :is "Subject" ["пришел", "ушел"]) {
+  fileinto "~hr@specznak.com.ua/INBOX/&BEMERwRRBEI- &BEAEMAQxBD4ERwQ1BDMEPg- &BDIEQAQ1BDwENQQ9BDg-/&BEIEQwQ,BD4EOwQ1BDIEMA-/Drobotun.Sergei";
+}
+
+#!1 Drobotun.Sergei corp
+if allof (address :all :contains "From" "Drobotun.Sergei", not header :is "Subject" ["пришел", "ушел"]) {
+  fileinto "~hr@specznak.com.ua/INBOX/&BBoEPgRABD8EPgRABDAERgQ4BE8-";
+}
+
+#!1 Kravchuk.Artem time
+if allof (address :all :contains "From" "Kravchuk.Artem", header :is "Subject" ["пришел", "ушел"]) {
+  fileinto "~hr@specznak.com.ua/INBOX/&BEMERwRRBEI- &BEAEMAQxBD4ERwQ1BDMEPg- &BDIEQAQ1BDwENQQ9BDg-/&BEIEQwQ,BD4EOwQ1BDIEMA-/Kravchuk.Artem";
+}
+
+#!1 Kravchuk.Artem corp
+if allof (address :all :contains "From" "Kravchuk.Artem", not header :is "Subject" ["пришел", "ушел"]) {
+  fileinto "~hr@specznak.com.ua/INBOX/&BBoEPgRABD8EPgRABDAERgQ4BE8-";
+}
+
+#!1 Kucherenko.Dmitrii time
+if allof (address :all :contains "From" "Kucherenko.Dmitrii", header :contains "Subject" ["пришел", "ушел"]) {
+  fileinto "~hr@specznak.com.ua/INBOX/&BEMERwRRBEI- &BEAEMAQxBD4ERwQ1BDMEPg- &BDIEQAQ1BDwENQQ9BDg-/&BDQEPQQ1BD8EQAQ+BD8ENQRCBEAEPgQyBEEEOg-/Kucherenko.Dmitrii";
+}
+
+#!1 Kucherenko.Dmitrii corp
+if allof (address :all :contains "From" "Kucherenko.Dmitrii", not header :contains "Subject" ["пришел", "ушел"]) {
+  fileinto "~hr@specznak.com.ua/INBOX/&BBoEPgRABD8EPgRABDAERgQ4BE8-";
+}
+
+#!1 Mikheeva.Ekaterina time
+if allof (address :all :contains "From" "Mikheeva.Ekaterina", header :contains "Subject" ["пришел", "ушел"]) {
+  fileinto "~hr@specznak.com.ua/INBOX/&BEMERwRRBEI- &BEAEMAQxBD4ERwQ1BDMEPg- &BDIEQAQ1BDwENQQ9BDg-/&BDQEPQQ1BD8EQAQ+BD8ENQRCBEAEPgQyBEEEOg-/Mikheeva.Ekaterina";
+}
+
+#!1 Mikheeva.Ekaterina corp
+if allof (address :all :contains "From" "Mikheeva.Ekaterina", not header :contains "Subject" ["пришел", "ушел"]) {
+  fileinto "~hr@specznak.com.ua/INBOX/&BBoEPgRABD8EPgRABDAERgQ4BE8-";
+}
+
+#!1 merkulova.elizaveta time
+if allof (address :all :contains "From" ["merkulova.elizaveta", "Merkulova.Elizaveta"], header :contains "Subject" ["пришел", "ушел"]) {
+  fileinto "~hr@specznak.com.ua/INBOX/&BEMERwRRBEI- &BEAEMAQxBD4ERwQ1BDMEPg- &BDIEQAQ1BDwENQQ9BDg-/&BDoEQAQwBEEEPQQ+BDcEMgRRBDcENAQ9BEsEOQ-/Merkulova.Elizaveta";
+}
+
+#!1 merkulova.elizaveta corp
+if allof (address :all :contains "From" "merkulova.elizaveta", not header :is "Subject" ["пришел", "ушел"]) {
+  fileinto "~hr@specznak.com.ua/INBOX/&BBoEPgRABD8EPgRABDAERgQ4BE8-";
+}
+
+#!1 batrachenko.anna time
+if allof (address :all :contains "From" "batrachenko.anna", header :is "Subject" ["пришел", "ушел", "пришёл", "ушёл", "Пришел", "Ушел", "Пришла", "Ушла", "ушла"]) {
+  fileinto "~hr@specznak.com.ua/INBOX/&BEMERwRRBEI- &BEAEMAQxBD4ERwQ1BDMEPg- &BDIEQAQ1BDwENQQ9BDg-/&BDoEQAQwBEEEPQQ+BDcEMgRRBDcENAQ9BEsEOQ-/Batrachenko.Anna";
+}
+
+#!1 batrachenko.anna corp
+if allof (address :all :contains "From" "batrachenko.anna", not header :is "Subject" ["пришел", "ушел", "пришёл", "ушёл", "Пришел", "Ушел", "пришла", "ушла", "Пришла", "Ушла"]) {
+  fileinto "~hr@specznak.com.ua/INBOX/&BBoEPgRABD8EPgRABDAERgQ4BE8-";
+}
+
+#!1 Demydova.Nataliia time
+if allof (address :all :contains "From" ["Demydova.Nataliia", "demydova.nataliia"], header :is "Subject" ["пришел", "ушел"]) {
+  fileinto "~hr@specznak.com.ua/INBOX/&BEMERwRRBEI- &BEAEMAQxBD4ERwQ1BDMEPg- &BDIEQAQ1BDwENQQ9BDg-/&BDoEQAQwBEEEPQQ+BDcEMgRRBDcENAQ9BEsEOQ-/Demydova.Nataliia";
+}
+
+#!1 Demydova.Nataliia corp
+if allof (address :all :contains "From" ["Demydova.Nataliia", "demydova.nataliia"], not header :is "Subject" ["пришел", "ушел"]) {
+  fileinto "~hr@specznak.com.ua/INBOX/&BEMERwRRBEI- &BEAEMAQxBD4ERwQ1BDMEPg- &BDIEQAQ1BDwENQQ9BDg-/&BDoEQAQwBEEEPQQ+BDcEMgRRBDcENAQ9BEsEOQ-/Demydova.Nataliia";
+}
+
+#!1 nefedova.yuliia time
+if allof (address :all :contains "From" ["Nefedova.Yuliia", "nefedova.yuliia"], header :is "Subject" ["пришел", "ушел", "пришёл", "ушёл", "Пришел", "Ушел", "Пришла", "Ушла", "ушла"]) {
+  fileinto "~hr@specznak.com.ua/INBOX/&BEMERwRRBEI- &BEAEMAQxBD4ERwQ1BDMEPg- &BDIEQAQ1BDwENQQ9BDg-/&BEIEQwQ,BD4EOwQ1BDIEMA-/Nefedova.Yuliia";
+}
+
+#!1 nefedova.yuliia corp
+if allof (address :all :contains "From" ["Nefedova.Yuliia", "nefedova.yuliia"], not header :is "Subject" ["пришел", "ушел", "пришёл", "ушёл", "Пришел", "Ушел", "пришла", "ушла", "Пришла", "Ушла"]) {
+  fileinto "~hr@specznak.com.ua/INBOX/&BBoEPgRABD8EPgRABDAERgQ4BE8-";
+}
+
+#!1 Rashkivskiy.Denis time
+if allof (address :all :contains "From" ["Rashkivskiy.Denis", "rashkivskiy.denis"], header :contains "Subject" ["пришел", "ушел", "Пришел", "Ушел", "пришёл"]) {
+  fileinto "~hr@specznak.com.ua/INBOX/&BEMERwRRBEI- &BEAEMAQxBD4ERwQ1BDMEPg- &BDIEQAQ1BDwENQQ9BDg-/&BD8EPgQ0BD4EOw-/Rashkivskiy.Denis";
+}
+
+#!1 Rashkivskiy.Denis corp
+if allof (address :all :contains "From" ["Rashkivskiy.Denis", "rashkivskiy.denis"], not header :contains "Subject" ["пришел", "ушел", "Пришел", "Ушел", "пришёл"]) {
+  fileinto "~hr@specznak.com.ua/INBOX/&BBoEPgRABD8EPgRABDAERgQ4BE8-";
+}
+
+#!1 piznak.yana time
+if allof (address :all :contains "From" ["piznak.yana", "Piznak.Yana"], header :contains "Subject" ["пришел", "ушел", "Пришел", "Ушел", "пришёл"]) {
+  fileinto "~hr@specznak.com.ua/INBOX/&BEMERwRRBEI- &BEAEMAQxBD4ERwQ1BDMEPg- &BDIEQAQ1BDwENQQ9BDg-/&BD8EPgQ0BD4EOw-/Rashkivskiy.Denis";
+}
+
+#!1 piznak.yana corp
+if allof (address :all :contains "From" ["piznak.yana", "Piznak.Yana"], not header :contains "Subject" ["пришел", "ушел", "Пришел", "Ушел", "пришёл"]) {
+  fileinto "~hr@specznak.com.ua/INBOX/&BBoEPgRABD8EPgRABDAERgQ4BE8-";
+}
