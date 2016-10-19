@@ -3,6 +3,7 @@ if allof (spamtest, not address :all :is "From" ["4marjana@gmail.com", "a.koinov
   fileinto "Junk E-mail";
   stop;
 }
+#it is comment
 
 #!1 Pogrebnaya.Anna time
 if allof (address :all :contains "From" ["Pogrebnaya.Anna", "pogrebnaya.anna"], header :contains "Subject" ["пришел", "ушел", "пришёл", "ушёл", "Пришел", "Ушел", "нерабочее время"]) {
