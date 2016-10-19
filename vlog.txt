@@ -10,7 +10,7 @@
 11:38:06 : 48bit access enabled
 11:38:06 : Model: ST31000528AS; Capacity: 1953525168 LBAs; SN: 5VP5KKW0; FW: CC49
 11:38:40 : Get S.M.A.R.T. command... OK
-11:38:40 : SMART status = BAD
+1
 11:39:00 : Get passport... OK
 11:39:00 : Recallibration... OK
 11:39:00 : Starting Reading, LBA=0..1953525167, sequential access, timeout 10000ms
